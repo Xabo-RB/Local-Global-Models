@@ -1,8 +1,6 @@
 
 using SIAN, Logging
 
-@info "Setting up the problem"
-
 ode = @ODEmodel(
   x4'(t) = -k5 * x4(t) // (k6 + x4(t)),
   x5'(t) = k5 * x4(t) // (k6 + x4(t)) - k7 * x5(t) / (k8 + x5(t) + x6(t)),
@@ -12,11 +10,7 @@ ode = @ODEmodel(
   y2(t) = x5(t)
 )
 
-res = identifiability_ode(ode, get_parameters(ode); p = 0.999, p_mod = 0, nthrds = 1)
-
-println(res)
-
-#@time res = identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 0, nthrds = 1)
+#res = identifiability_ode(ode, get_parameters(ode); p = 0.999, p_mod = 0, nthrds = 1)
 #println(res)
 
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
