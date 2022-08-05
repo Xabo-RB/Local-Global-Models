@@ -15,9 +15,9 @@ ode = @ODEmodel(
 
 res = identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 0, nthrds = 1)
 
-
-
 println(res)
+
+@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
 # The following computation shows that one can identify more from two experiments
 # SIAN. generate_replica(ode, 2) generates a system consiting of two copies of sigma
