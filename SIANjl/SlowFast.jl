@@ -1,5 +1,4 @@
 using SIAN, Logging
-@info "Setting up the problem"
 
 ode = @ODEmodel(
   xA'(t) = -k1 * xA(t),
