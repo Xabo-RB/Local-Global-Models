@@ -1,5 +1,4 @@
 using SIAN, Logging
-@info "Setting up the problem"
 
 ode = @ODEmodel(
   S'(t) = -b * S(t) * In(t) / N(t),

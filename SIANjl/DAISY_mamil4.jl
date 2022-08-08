@@ -1,6 +1,5 @@
 
 using SIAN, Logging
-@info "Setting up the problem"
 
 ode = @ODEmodel(
     x1'(t) = -k01 * x1(t) + k12 * x2(t) + k13 * x3(t) + k14 * x4(t) - k21 * x1(t) - k31 * x1(t) - k41 * x1(t) + u(t),
