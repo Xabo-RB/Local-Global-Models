@@ -1,9 +1,4 @@
-using Logging
-
 using StructuralIdentifiability
-
-logger = Logging.SimpleLogger(stdout, Logging.Debug)
-global_logger(logger)
 
 ode = @ODEmodel(
     X'(t) = mumax*S(t)*X(t)/(S(t)+Ks)-d*X(t),

@@ -1,9 +1,4 @@
-using Logging
-
 using StructuralIdentifiability
-
-logger = Logging.SimpleLogger(stdout, Logging.Debug)
-global_logger(logger)
 
 ode = @ODEmodel(
     x1'(t) = -p_3* x1(t) - p_4* x1(t)^2 + p_1 *x2(t) + p_2 *x3(t) - p_7 *x1(t) *u(t),
