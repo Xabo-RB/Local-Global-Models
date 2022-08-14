@@ -18,3 +18,17 @@ ode = @ODEmodel(
 )
 
 @time println(assess_identifiability(ode))
+
+#EN SIAN
+using SIAN, Logging
+
+ode = @ODEmodel(
+    x1'(t) = -b * x1(t) + 1 / (c + x4(t)),
+    x2'(t) = alpha * x1(t) - beta * x2(t),
+    x3'(t) = gama * x2(t) - delta * x3(t),
+    x4'(t) = sigma * x4(t) * (gama * x2(t) - delta * x3(t)) / x3(t),
+    y(t) = x1(t)
+)
+
+res = identifiability_ode(ode, get_parameters(ode); p = 0.999, p_mod = 0, nthrds = 1)
+println(res)
