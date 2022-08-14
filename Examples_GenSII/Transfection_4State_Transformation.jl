@@ -1,10 +1,9 @@
 using SIAN, Logging
 
 ode = @ODEmodel(
-  mRNA'(t) = -d1*mRNA(t)-d2*mRNA(t)*enz(t),
-  GFP'(t) = kTL*mRNA(t)-b*GFP(t),
-  enz'(t) = d3*mRNAenz(t)-d2*mRNA(t)*enz(t),
-  mRNAenz'(t) = -d3*mRNAenz(t)+d2*mRNA(t)*enz(t),
+  x1'(t) = -x1(t)*(d1 + d2_times_mRNA0*x3(t)),
+  GFP'(t) = kTL_times_mRNA0*x1(t) - GFP*b,
+  x3'(t) = d3*enz0_div_mRNA0 - d3*x3(t) - d2_times_mRNA0*x3(t)*x1(t),
   y1(t) = GFP(t)
 )
 
