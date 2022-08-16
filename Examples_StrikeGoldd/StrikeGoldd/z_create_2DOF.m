@@ -1,6 +1,6 @@
 % Model from Maes, K., Chatzis, M., Lombaert, G., 2019. 
 % "Observability of nonlinear systems with unmeasured inputs."
-% Mech. Syst. Signal Process. 130, 378–394..
+% Mech. Syst. Signal Process. 130, 378ï¿½394..
 
 clear;
 
