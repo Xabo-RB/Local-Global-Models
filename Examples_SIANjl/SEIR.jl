@@ -43,3 +43,18 @@ ode = @ODEmodel(
   res = identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 0, nthrds = 1)
   
   println(res)
+
+
+#SIN N(T) DE NINGUNA FORMA  
+using SIAN, Logging
+
+ode = @ODEmodel(
+  S'(t) = -b * S(t) * In(t),
+  E'(t) = b * S(t) * In(t) - nu * E(t),
+  In'(t) = nu * E(t) - a * In(t),
+  y1(t) = In(t)
+)
+
+res = identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 0, nthrds = 1)
+
+println(res)
