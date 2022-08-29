@@ -15,6 +15,9 @@ ode = @ODEmodel(
     y3(t) = x8(t)*p16
 )
 
+@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
+
+
 #p1 = EGFR_turnover
 #p2 = reaction_1_k1
 #p3 = reaction_1_k2
@@ -41,5 +44,3 @@ ode = @ODEmodel(
 #x8 = pS6
 #x9 = EGF_EGFR
 
-
-@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
