@@ -1,7 +1,7 @@
 using SIAN, Logging
 
 ode = @ODEmodel(
-    x1'(t) = 68190.0*p1 - u(t)*x1(t)*p2 + x9(t)*p3 - x1(t)*p1,
+    x1'(t) = 68190*p1 - u(t)*x1(t)*p2 + x9(t)*p3 - x1(t)*p1,
     x2'(t) = x9(t)*p4 - x2(t)*p5 + x3(t)*p6 + x3(t)*p7 - x4(t)*x2(t)*p8,
     x3'(t) = x4(t)*x2(t)*p8 - x3(t)*p7 - x3(t)*p6,
     x4'(t) = x5(t)*p9 + x3(t)*p6 - x4(t)*x2(t)*p8,
@@ -17,6 +17,30 @@ ode = @ODEmodel(
 
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
+
+using Logging
+
+using StructuralIdentifiability
+
+logger = Logging.SimpleLogger(stdout, Logging.Debug)
+global_logger(logger)
+
+ode = @ODEmodel(
+    x1'(t) = 68190*p1 - u(t)*x1(t)*p2 + x9(t)*p3 - x1(t)*p1,
+    x2'(t) = x9(t)*p4 - x2(t)*p5 + x3(t)*p6 + x3(t)*p7 - x4(t)*x2(t)*p8,
+    x3'(t) = x4(t)*x2(t)*p8 - x3(t)*p7 - x3(t)*p6,
+    x4'(t) = x5(t)*p9 + x3(t)*p6 - x4(t)*x2(t)*p8,
+    x5'(t) = x6(t)*p10 - x5(t)*p9 + x6(t)*p12 + x3(t)*p7 - x7(t)*x5(t)*p13,
+    x7'(t) = x6(t)*p10 + x8(t)*p11 - x7(t)*x5(t)*p13,
+    x6'(t) = x7(t)*x5(t)*p13 - x6(t)*p12 - x6(t)*p10,
+    x8'(t) = x6(t)*p12 - x8(t)*p11,
+    x9'(t) = u(t)*x1(t)*p2 - x9(t)*p3 - x9(t)*p4,
+    y1(t) = p14*(x2(t) + x3(t)),
+    y2(t) = p15*(x5(t) + x6(t)),
+    y3(t) = x8(t)*p16
+)
+
+@time println(assess_identifiability(ode))
 
 #p1 = EGFR_turnover
 #p2 = reaction_1_k1
