@@ -1,18 +1,18 @@
 using SIAN, Logging
 
 ode = @ODEmodel(
-    EGFR'(t) = 68190.0*p1 - EGF_u(t)*EGFR(t)*p2 + EGF_EGFR(t)*p3 - EGFR(t)*p1,
-    pEGFR'(t) = EGF_EGFR(t)*p4 - pEGFR(t)*p5 + pEGFR_Akt(t)*p6 + pEGFR_Akt(t)*p7 - Akt(t)*pEGFR(t)*p8,
-    pEGFR_Akt'(t) = Akt(t)*pEGFR(t)*p8 - pEGFR_Akt(t)*p7 - pEGFR_Akt(t)*p6,
-    Akt'(t) = pAkt(t)*p9 + pEGFR_Akt(t)*p6 - Akt(t)*pEGFR(t)*p8,
-    pAkt'(t) = pAkt_S6(t)*p10 - pAkt(t)*p9 + pAkt_S6(t)*p12 + pEGFR_Akt(t)*p7 - S6(t)*pAkt(t)*p13,
-    S6'(t) = pAkt_S6(t)*p10 + pS6(t)*p11 - S6(t)*pAkt(t)*p13,
-    pAkt_S6'(t) = S6(t)*pAkt(t)*p13 - pAkt_S6(t)*p12 - pAkt_S6(t)*p10,
-    pS6'(t) = pAkt_S6(t)*p12 - pS6(t)*p11,
-    EGF_EGFR'(t) = EGF_u(t)*EGFR(t)*p2 - EGF_EGFR(t)*p3 - EGF_EGFR(t)*p4,
-    y1(t) = p14*(pEGFR(t) + pEGFR_Akt(t)),
-    y2(t) = p15*(pAkt(t) + pAkt_S6(t)),
-    y3(t) = pS6(t)*p16
+    x1'(t) = 68190.0*p1 - u(t)*x1(t)*p2 + x9(t)*p3 - x1(t)*p1,
+    x2'(t) = x9(t)*p4 - x2(t)*p5 + x3(t)*p6 + x3(t)*p7 - x4(t)*x2(t)*p8,
+    x3'(t) = x4(t)*x2(t)*p8 - x3(t)*p7 - x3(t)*p6,
+    x4'(t) = x5(t)*p9 + x3(t)*p6 - x4(t)*x2(t)*p8,
+    x5'(t) = x6(t)*p10 - x5(t)*p9 + x6(t)*p12 + x3(t)*p7 - x7(t)*x5(t)*p13,
+    x7'(t) = x6(t)*p10 + x8(t)*p11 - x7(t)*x5(t)*p13,
+    x6'(t) = x7(t)*x5(t)*p13 - x6(t)*p12 - x6(t)*p10,
+    x8'(t) = x6(t)*p12 - x8(t)*p11,
+    x9'(t) = u(t)*x1(t)*p2 - x9(t)*p3 - x9(t)*p4,
+    y1(t) = p14*(x2(t) + x3(t)),
+    y2(t) = p15*(x5(t) + x6(t)),
+    y3(t) = x8(t)*p16
 )
 
 #p1 = EGFR_turnover
@@ -31,7 +31,15 @@ ode = @ODEmodel(
 #p15 = scaleFactor_pAkt
 #p16 = scaleFactor_pS6
 
-
+#x1 = EGFR
+#x2 = pEGFR
+#x3 = pEGFR_Akt
+#x4 = Akt
+#x5 = pAkt
+#x6 = pAkt_S6
+#x7 = S6
+#x8 = pS6
+#x9 = EGF_EGFR
 
 
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
