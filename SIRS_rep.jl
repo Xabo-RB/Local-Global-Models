@@ -1,4 +1,3 @@
-
 #Primera reparametrización
 using Logging, SIAN
 
