@@ -1,8 +1,8 @@
 clear;
 
 % 4 states
-syms x1 x2 dx1 dx2
-x = [x1;x2;dx1;dx2];
+syms x1 x2 x3 
+x = [x1;x2;x3];
 
 % 1 known input and 1 unknown input
 syms u;
