@@ -3,7 +3,8 @@ Models for analysing the global/local properties
 
 ## List of Models
 
-(1)
+### (1)
+
 Taken from: [*Benchmarking tools for a priori identifiability analysis*](https://arxiv.org/abs/2207.09745), 2022. https://doi.org/10.48550/arXiv.2207.09745
 
 - BIG
@@ -46,7 +47,7 @@ Taken from: [*Benchmarking tools for a priori identifiability analysis*](https:/
 
 - Tumor
 
-(2)
+### (2)
 Taken from: https://github.com/genssi-developer/GenSSI.git
 
 - Bilirubin1
@@ -80,7 +81,7 @@ Taken from: https://github.com/genssi-developer/GenSSI.git
 - Transfection_4State_Transformation
 
 
-(3)
+### (3)
 Taken from: https://github.com/sedoglavic/ObservabilityTest.git
 
 - A2006
