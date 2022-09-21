@@ -128,3 +128,28 @@ Taken from: https://github.com/sedoglavic/ObservabilityTest.git
 - W1982
 
 - WSP1985
+
+### (3)
+Taken from: 
+
+- Giohydragenation
+
+- ChemicalReactionNetwork
+
+- DAISY_ex3
+
+- DAISY_mamil3
+
+- DAISY_mamil4
+
+- oralGlucose
+
+- SEIR
+
+- SEIR2
+
+- SIR_R0
+
+- SlowFast
+
+- Treatment
