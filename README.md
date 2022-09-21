@@ -188,7 +188,7 @@ Taken from:
 - Vajda1989
 
 ### (6)
-Taken from:
+Taken from: https://github.com/SciML/StructuralIdentifiability.jl.git
 
 - Crauste
 
