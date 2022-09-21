@@ -78,3 +78,53 @@ Taken from: https://github.com/genssi-developer/GenSSI.git
 - Transfection_4State
 
 - Transfection_4State_Transformation
+
+
+(3)
+Taken from: 
+
+- A2006
+
+- BF2004
+
+- C1996
+
+- Campbell2016
+
+- CC1993
+
+- CG1992
+
+- CGV1990
+
+- F2007
+
+- G1995
+
+- GRV1990
+
+- Juricic_1
+
+- KD1999
+
+- L2003
+
+- LLW1987
+
+- MP1999
+
+- MW2000
+
+- R1986
+
+- REtAl2002
+
+- SHH1997
+
+- V1987
+
+- Verhulst
+
+- W1982
+
+- WSP1985
