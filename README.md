@@ -27,3 +27,54 @@ Taken from: [*Benchmarking tools for a priori identifiability analysis*](https:/
 - JAKSTAT2
 
 - MAPK
+
+- NFKB1
+
+- NFKB2
+
+- p53
+
+- Phosphorilation
+
+- PK1
+
+- PK2
+
+- Ruminal Lipolysis
+
+- SIRS with forcing
+
+- Tumor
+
+(2)
+Taken from: 
+
+- Bilirubin1
+
+- Bilirubin2
+
+- Cholesterol1
+
+- Cholesterol2
+
+- Degradation
+
+- DegradationPoly
+
+- Glycolysis
+
+- Goodwin_gen
+
+- GoodwinPoly_gen
+
+- HighDimNonLin
+
+- PharmacokineticsPoly
+
+- Thyroid1
+
+- Transfection_2State
+
+- Transfection_4State
+
+- Transfection_4State_Transformation
