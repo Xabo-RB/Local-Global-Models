@@ -129,7 +129,7 @@ Taken from: https://github.com/sedoglavic/ObservabilityTest.git
 
 - WSP1985
 
-### (3)
+### (4)
 Taken from: https://github.com/alexeyovchinnikov/SIAN-Julia.git
 
 - Giohydragenation
@@ -153,3 +153,62 @@ Taken from: https://github.com/alexeyovchinnikov/SIAN-Julia.git
 - SlowFast
 
 - Treatment
+
+### (5)
+Taken from:
+
+- 1A_integral
+
+- 1B_integral
+
+- 1C_nonlinear
+
+- 2DOF
+
+- Bolie_A
+
+- Bolie_B
+
+- Bruno2016
+
+- CR
+
+- CSTR_observer
+
+- FHN_observer
+
+- Fujita
+
+- Goodwin_observer
+
+- NFKB_merkt
+
+- Pitavastatin
+
+- Vajda1989
+
+### (6)
+Taken from:
+
+- Crauste
+
+- CRN
+
+- Fujita
+
+- Goodwin
+
+- LV
+
+- QWWC
+
+- SEAIJRC
+
+- SIAR
+
+### (7)
+Taken from:
+
+- SEIR [*IDENTIFIABILITY OF INFECTION MODEL PARAMETERS EARLY IN AN EPIDEMIC. TIMOTHY SAUER 2021*]
+
+- SEUIR
