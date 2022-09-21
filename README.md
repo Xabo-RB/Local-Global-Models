@@ -209,6 +209,6 @@ Taken from: https://github.com/SciML/StructuralIdentifiability.jl.git
 ### (7)
 Taken from:
 
-- SEIR [*IDENTIFIABILITY OF INFECTION MODEL PARAMETERS EARLY IN AN EPIDEMIC*](https://doi.org/10.1137/20M1353289),2021
+- SEIR: [*Identifiability of infection model parameters early in an epidemic*](https://doi.org/10.1137/20M1353289),2021
 
-- SEUIR
+- SEUIR: [*Identifiability of infection model parameters early in an epidemic*](https://doi.org/10.1137/20M1353289),2021
