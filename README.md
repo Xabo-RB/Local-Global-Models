@@ -3,9 +3,6 @@ Models for analysing the global/local properties
 
 ![Imaxe1](https://user-images.githubusercontent.com/85739367/192264168-d46f1f9b-5e08-47d9-b729-efdeb4e54400.png)
 
-![alt text](https://github.com/[Xabo-RB]/[Local-Global-Models]/blob/[main]/Imaxe1.png?raw=true)
-
-
 
 ## List of Models
 
