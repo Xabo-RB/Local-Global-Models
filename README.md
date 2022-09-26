@@ -1,6 +1,8 @@
 # Local-Global-Models
 Models for analysing the global/local properties
 
+![alt text](https://github.com/[Xabo-RB]/[Local-Global-Models]/blob/[mains]/Imaxe1.png?raw=true)
+
 ## List of Models
 
 ### (1)
