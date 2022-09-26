@@ -1,7 +1,7 @@
 # Local-Global-Models
 Models for analysing the global/local properties
 
-![Imaxe1](https://user-images.githubusercontent.com/85739367/192264168-d46f1f9b-5e08-47d9-b729-efdeb4e54400.png)
+![Imaxe1](https://user-images.githubusercontent.com/85739367/192265000-94c19676-f3a6-48ee-84eb-57d6ede80fc5.png)
 
 
 ## List of Models
