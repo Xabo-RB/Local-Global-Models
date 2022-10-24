@@ -6,8 +6,8 @@ using SIAN, Logging
 
 ode = @ODEmodel(
     S'(t) = -lambda * phi * (S(t)-T(t)) + s*(1-S(t)),
-    T'(t) =  phi * (S(t) - T(t)) + s*(1-T(t)) - k * T(t)*L(t),
-    A'(t) =  k * T(t) - L(t) - ki*A(t),
+    T'(t) =  phi * (S(t) - T(t)) + s*(1-T(t)) - k * T(t)*L,
+    A'(t) =  k * T(t) - L - ki*A(t),
     y1(t) = S(t)/(lambda+1) + ((T(t)+A(t))*lambda/(lambda+1))
 )
 
@@ -19,8 +19,8 @@ using SIAN, Logging
 
 ode = @ODEmodel(
     S'(t) = -lambda * phi * (S(t)-T(t)) + s*(1-S(t)),
-    T'(t) =  phi * (S(t) - T(t)) + s*(1-T(t)) - k * (T(t)^h)*(L(t)^h),
-    A'(t) =  k *(T(t)^h)*(L(t)^h) - ki*A(t),
+    T'(t) =  phi * (S(t) - T(t)) + s*(1-T(t)) - k * (T(t)^h)*(L^h),
+    A'(t) =  k *(T(t)^h)*(L^h) - ki*A(t),
     y1(t) = S(t)/(lambda+1) + ((T(t)+A(t))*lambda/(lambda+1))
 )
 
