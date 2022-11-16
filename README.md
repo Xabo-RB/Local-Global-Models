@@ -217,3 +217,7 @@ Taken from:
 - SEIR: [*Identifiability of infection model parameters early in an epidemic*](https://doi.org/10.1137/20M1353289),2021
 
 - SEUIR: [*Identifiability of infection model parameters early in an epidemic*](https://doi.org/10.1137/20M1353289),2021
+
+### Inmunology
+
+- TCR triggering, Joao Sousa: [*A mathematical analysis of TCR serial triggering and down‐regulation*](https://doi.org/10.1002/1521-4141(200011)30:11<3219::AID-IMMU3219>3.0.CO;2-7), 2000
