@@ -39,7 +39,7 @@ Taken from: [*Benchmarking tools for a priori identifiability analysis*](https:/
 
 - p53
 
-- Phosphorilation
+- Phosphorylation
 
 - PK1
 
