@@ -1,4 +1,4 @@
-function model = TCRtrigJoao_E()
+function model = TCRtrigJoao_D()
 % HIV Model with Constant and Time Varying Parameters
 % Miao H, Xia X, Perelson AS, Wu H. 
 % "On identifiability of nonlinear ODE models and applications in viral dynamics." 
@@ -12,25 +12,23 @@ function model = TCRtrigJoao_E()
 	syms S0 T0 A0
 
     % Parameters
-	model.sym.p = [lambda; phi; s; ki; hh; k; L];
+	model.sym.p = [s; ki; hh; k; L];
     %model.sym.p = [phi; s; ki; hh; k; L];
 
     % State variables
-	model.sym.x = [S T A];
+	model.sym.x = [T A];
 
     % Control vectors (g)
 	model.sym.g = [0
-                   0
                    0];
 
     % Autonomous dynamics (f)
-	model.sym.xdot = [-lambda * phi * (S-T) + s*(1-S)
-					phi * (S - T) + s*(1-T) - k * (T^hh)*(L^hh)
+	model.sym.xdot = [s*(1-T) - k * (T^hh)*(L^hh)
 					k *(T^hh)*(L^hh) - ki*A];
 
     % Initial conditions
-	model.sym.x0 = [S0;T0;A0];
+	model.sym.x0 = [T0;A0];
 
     % Observables    
-	model.sym.y = [S/(lambda+1) + ((T+A)*lambda/(lambda+1))];
+	model.sym.y = [T + A];
 end
