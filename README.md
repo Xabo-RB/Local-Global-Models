@@ -223,6 +223,6 @@ Taken from:
 - TCR triggering, Joao Sousa: [*A mathematical analysis of TCR serial triggering and down‐regulation*](https://doi.org/10.1002/1521-4141(200011)30:11<3219::AID-IMMU3219>3.0.CO;2-7), 2000
 
 
-### (8) COVID
+### (9) COVID
 
 - [*Structural identifiability and observability of compartmental models of the COVID-19 pandemic*](https://doi.org/10.1016/j.arcontrol.2020.12.001), 2021
