@@ -4,8 +4,8 @@
 using SIAN, Logging
 
 ode = @ODEmodel(
-    S'(t) = -beta*(I(t)+eta*A(t))*S(t)/N,
-    E'(t) = beta*(I(t)+eta*A(t))*S(t)/N-sigma*E(t),
+    S'(t) = -beta*(I(t)+eta*A(t))*S(t)/N(t),
+    E'(t) = beta*(I(t)+eta*A(t))*S(t)/N(t)-sigma*E(t),
     I'(t) = alpha*sigma*E(t)-phi*I(t)-gamma_i*I(t),
     A'(t) = (1-alpha)*sigma*E(t)-gamma_0*A(t),
     H'(t) = phi*I(t)-delta*H(t)-gamma_h*H(t),
