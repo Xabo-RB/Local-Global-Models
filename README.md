@@ -234,15 +234,15 @@ Taken from [*Structural identifiability and observability of compartmental model
 
 - SEIR 4 [*Mathematical Modeling of Epidemic Diseases; A Case Study of the COVID-19 Coronavirus*](https://doi.org/10.48550/arXiv.2003.11371), 2020
 
-- SEIR 5
+- SEIR 5 [*Mathematical Modeling of Epidemic Diseases; A Case Study of the COVID-19 Coronavirus*](https://doi.org/10.48550/arXiv.2003.11371), 2020
 
-- SEIR 8
+- SEIR 8 [*To mask or not to mask: Modeling the potential for face mask use by the general public to curtail the COVID-19 pandemic*](https://doi.org/10.1016/j.idm.2020.04.001), 2020
 
-- SEIR 11
+- SEIR 11 (https://github.com/ryansmcgee/seirsplus#model)
 
-- SEIR 14
+- SEIR 14 [*A modified SEIR model to predict the COVID-19 outbreak in Spain and Italy: Simulating control scenarios and multi-scale epidemics*](https://doi.org/10.1016/j.rinp.2020.103746), 2020
 
-- SEIR 16
+- SEIR 16 [*Why is it difficult to accurately predict the COVID-19 epidemic?*](https://doi.org/10.1016/j.idm.2020.03.001), 2020
 
 - SEIR 17
 
