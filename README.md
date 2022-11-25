@@ -226,3 +226,35 @@ Taken from:
 ### (9) COVID
 
 - [*Structural identifiability and observability of compartmental models of the COVID-19 pandemic*](https://doi.org/10.1016/j.arcontrol.2020.12.001), 2021
+
+- SEIR 1
+
+- SEIR 2
+
+- SEIR 3
+
+- SEIR 4
+
+- SEIR 5
+
+- SEIR 8
+
+- SEIR 11
+
+- SEIR 14
+
+- SEIR 16
+
+- SEIR 17
+
+- SEIR 18
+
+- SEIR 31
+
+- SEIR 32
+
+- SEIR 33
+
+- SEIR 34
+
+- SEIR 36 ref
