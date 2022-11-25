@@ -254,6 +254,6 @@ Taken from [*Structural identifiability and observability of compartmental model
 
 - SEIR 33 [*Construction of Compartmental Models for COVID-19 with Quarantine, Lockdown and Vaccine Interventions*](http://dx.doi.org/10.2139/ssrn.3574020), 2020
 
-- SEIR 34 
+- SEIR 34 [*Introduction to SEIR Models*](https://indico.ictp.it/event/7960/session/3/contribution/19/material/slides/0.pdf), 2017
 
-- SEIR 36 ref
+- SEIR 36 ref (https://github.com/ryansmcgee/seirsplus/blob/master/docs/SEIRSplus_Model.pdf)
