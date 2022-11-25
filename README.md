@@ -244,16 +244,16 @@ Taken from [*Structural identifiability and observability of compartmental model
 
 - SEIR 16 [*Why is it difficult to accurately predict the COVID-19 epidemic?*](https://doi.org/10.1016/j.idm.2020.03.001), 2020
 
-- SEIR 17
+- SEIR 17 [*Healthcare impact of COVID-19 epidemic in India: A stochastic mathematical model*](https://doi.org/10.1016/j.mjafi.2020.03.022), 2020
 
-- SEIR 18
+- SEIR 18 [*Modeling the Control of COVID-19: Impact of Policy Interventions and Meteorological Factors*](https://doi.org/10.48550/arXiv.2003.02985), 2020
 
-- SEIR 31
+- SEIR 31 [*Mathematical model of transmission dynamics with mitigation and health measures for SARS-CoV-2 infection in European countries*](https://doi.org/10.21203/rs.3.rs-32248/v1), 2020
 
-- SEIR 32
+- SEIR 32 [*Modelling the Transmission Dynamics of COVID-19 in Six High-Burden Countries*](https://doi.org/10.1155/2021/5089184), 2021
 
-- SEIR 33
+- SEIR 33 [*Construction of Compartmental Models for COVID-19 with Quarantine, Lockdown and Vaccine Interventions*](http://dx.doi.org/10.2139/ssrn.3574020), 2020
 
-- SEIR 34
+- SEIR 34 
 
 - SEIR 36 ref
