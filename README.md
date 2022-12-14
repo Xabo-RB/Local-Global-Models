@@ -262,5 +262,6 @@ Taken from [*Structural identifiability and observability of compartmental model
 
 - SIR 6 [*Total variation regularization for compartmental epidemic models with time-varying dynamics*](https://doi.org/10.48550/arXiv.2004.00412), 2020
 
-- SIR 13 [*Effective containment explains sub-exponential growth in confirmed cases of recent COVID-19 outbreak in China*](https://www.science.org/doi/10.1126/science.abb4557)
+- SIR 13 [*Effective containment explains sub-exponential growth in confirmed cases of recent COVID-19 outbreak in China*](https://www.science.org/doi/10.1126/science.abb4557), 2020
 
+- SIR 19 [*A simple SIR model with a large set of asymptomatic infectives*](https://doi.org/10.3934/mine.2021013), 2020
