@@ -213,9 +213,9 @@ Taken from: https://github.com/SciML/StructuralIdentifiability.jl.git
 ### (7)
 Taken from:
 
-- SEIR: [*Identifiability of infection model parameters early in an epidemic*](https://doi.org/10.1137/20M1353289),2021
+- SEIR: [*Identifiability of infection model parameters early in an epidemic*](https://doi.org/10.1137/20M1353289), 2021
 
-- SEUIR: [*Identifiability of infection model parameters early in an epidemic*](https://doi.org/10.1137/20M1353289),2021
+- SEUIR: [*Identifiability of infection model parameters early in an epidemic*](https://doi.org/10.1137/20M1353289), 2021
 
 - generalised Lokta-Volterra: [*Structural identifiability of the generalized Lotka–Volterra model for microbiome studies*](https://doi.org/10.1098/rsos.201378), 2021
 
