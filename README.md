@@ -261,3 +261,6 @@ Taken from [*Structural identifiability and observability of compartmental model
 - SEIR 38 [*SEIR Transmission dynamics model of 2019 nCoV coronavirus with considering the weak infectious ability and changes in latency duration*](https://doi.org/10.1101/2020.02.16.20023655), 2020
 
 - SIR 6 [*Total variation regularization for compartmental epidemic models with time-varying dynamics*](https://doi.org/10.48550/arXiv.2004.00412), 2020
+
+- SIR 13 [*Effective containment explains sub-exponential growth in confirmed cases of recent COVID-19 outbreak in China*](https://www.science.org/doi/10.1126/science.abb4557)
+
