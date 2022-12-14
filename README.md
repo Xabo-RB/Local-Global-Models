@@ -217,6 +217,8 @@ Taken from:
 
 - SEUIR: [*Identifiability of infection model parameters early in an epidemic*](https://doi.org/10.1137/20M1353289),2021
 
+- generalised Lokta-Volterra: [*Structural identifiability of the generalized Lotka–Volterra model for microbiome studies*](https://doi.org/10.1098/rsos.201378), 2021
+
 ### (8) Inmunology
 
 - TCR triggering, Joao Sousa: [*A mathematical analysis of TCR serial triggering and down‐regulation*](https://doi.org/10.1002/1521-4141(200011)30:11<3219::AID-IMMU3219>3.0.CO;2-7), 2000
