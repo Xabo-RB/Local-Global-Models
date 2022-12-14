@@ -257,3 +257,7 @@ Taken from [*Structural identifiability and observability of compartmental model
 - SEIR 34 [*Introduction to SEIR Models*](https://indico.ictp.it/event/7960/session/3/contribution/19/material/slides/0.pdf), 2017
 
 - SEIR 36 ref (https://github.com/ryansmcgee/seirsplus/blob/master/docs/SEIRSplus_Model.pdf)
+
+- SEIR 38 [*SEIR Transmission dynamics model of 2019 nCoV coronavirus with considering the weak infectious ability and changes in latency duration*](https://doi.org/10.1101/2020.02.16.20023655), 2020
+
+
