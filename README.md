@@ -219,6 +219,8 @@ Taken from:
 
 - generalised Lokta-Volterra: [*Structural identifiability of the generalized Lotka–Volterra model for microbiome studies*](https://doi.org/10.1098/rsos.201378), 2021
 
+- Phago cocktail: [*Optimizing the timing and composition of therapeutic phage cocktails: a control-theoretic approach*](https://doi.org/10.1007/s11538-020-00751-w), 2020
+
 ### (8) Inmunology
 
 - TCR triggering, Joao Sousa: [*A mathematical analysis of TCR serial triggering and down‐regulation*](https://doi.org/10.1002/1521-4141(200011)30:11<3219::AID-IMMU3219>3.0.CO;2-7), 2000
