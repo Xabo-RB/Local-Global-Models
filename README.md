@@ -265,3 +265,9 @@ Taken from [*Structural identifiability and observability of compartmental model
 - SIR 13 [*Effective containment explains sub-exponential growth in confirmed cases of recent COVID-19 outbreak in China*](https://www.science.org/doi/10.1126/science.abb4557), 2020
 
 - SIR 19 [*A simple SIR model with a large set of asymptomatic infectives*](https://doi.org/10.3934/mine.2021013), 2020
+
+- SIR 21 [*Why is it difficult to accurately predict the COVID-19 epidemic?*](https://doi.org/10.1016/j.idm.2020.03.001), 2020
+
+- SIR 22 [*Effects of quarantine in six endemic models for infectious diseases*](https://doi.org/10.1016/S0025-5564(02)00111-6), 2002
+
+- SIR 24 [*A mathematical model of epidemics with screening and variable infectivity*](https://doi.org/10.1016/0895-7177(95)00029-2), 1995
