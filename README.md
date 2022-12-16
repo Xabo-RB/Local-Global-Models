@@ -196,8 +196,6 @@ Taken from: https://github.com/SciML/StructuralIdentifiability.jl.git
 
 - Crauste
 
-- CRN
-
 - Fujita
 
 - Goodwin
