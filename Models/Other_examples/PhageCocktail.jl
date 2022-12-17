@@ -47,7 +47,7 @@ ode = @ODEmodel(
 
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
-
+#TODOS IDENTIFICABLES
 using SIAN, Logging
 ode = @ODEmodel(
     x1'(t) = r1*x1(t)*(1-((x1(t)+x2(t))/kCD))*(1-m)-kPD*x1(t)*Y*x3(t)/(1+x3(t))-((E1*x4(t)*x1(t))/(1+x1(t)+x2(t))),
@@ -64,7 +64,7 @@ ode = @ODEmodel(
 
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
-
+#TODOS IDENTIFICABLES
 using SIAN, Logging
 ode = @ODEmodel(
     x1'(t) = r1*x1(t)*(1-((x1(t)+x2(t))/kCD))*(1-m)-kPD*x1(t)*Y*x3(t)/(1+x3(t))-((E1*x4(t)*x1(t))/(1+x1(t)+x2(t))),
