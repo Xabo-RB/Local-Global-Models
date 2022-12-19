@@ -225,6 +225,12 @@ Taken from:
 
 - TCR Bachmann: [*Formation of tcr dimers/trimers as a crucial step for t cell activation*](https://doi.org/10.1002/(SICI)1521-4141(199808)28:08<2571::AID-IMMU2571>3.0.CO;2-T), 1998
 
+- TumorHu2019: [*Modeling pancreatic cancer dynamics with immunotherapy*](https://doi.org/10.1142/S021833901750005X), 2019
+
+- TumorPillis2007: [*Optimal control of mixed immunotherapy and chemotherapy of tumors*](https://doi.org/10.1142/S0218339008002435), 2007
+
+- TumorGarcia2020: [*Cancer-induced immunosuppression can enable effectiveness of immunotherapy through bistability generation: A mathematical and computational examination.*](https://doi.org/10.1016/j.jtbi.2020.110185), 2020
+
 
 ### (9) COVID
 
