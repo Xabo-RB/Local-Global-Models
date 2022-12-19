@@ -10,7 +10,7 @@ ode = @ODEmodel(
     w2'(t) = k21*x2(t)*w1(t) - dd2*w2(t) - k12*x1(t)*w2(t),
     #yy1'(t) = k11*x1(t)*y1(t) - ddd1*yy1(t) - kk21*x2(t)*yy1(t),
     #yy2'(t) = kk21*x2(t)*yy1(t) - ddd2*yy2(t) - kk32*x3(t)*yy2(t),
-    y1(t) = x1(t),
+    y1(t) = x1(t), #no estoy seguro, suposición por gLV
     y2(t) = x2(t)
 )
 

@@ -221,6 +221,8 @@ Taken from:
 
 - gLV_QSMI  [*Metabolite-mediated modelling of microbial community dynamics captures emergent behaviour more effectively than species–species modelling*](https://doi.org/10.1098/rsif.2019.0423), 2019
 
+- Compositional Lokta-Volterra: [*Compositional Lotka-Volterra describes microbial dynamics in the simplex*](https://doi.org/10.1371/journal.pcbi.1007917), 2020
+
 ### (8) Inmunology
 
 - TCR triggering, Joao Sousa: [*A mathematical analysis of TCR serial triggering and down‐regulation*](https://doi.org/10.1002/1521-4141(200011)30:11<3219::AID-IMMU3219>3.0.CO;2-7), 2000
