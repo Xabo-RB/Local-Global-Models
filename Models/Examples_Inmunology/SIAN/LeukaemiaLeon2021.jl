@@ -11,8 +11,8 @@ ode = @ODEmodel(
     P'(t) = rhop*(2*ap* (1/(1 + ks*(P(t)+I(t)))) -1)*P(t) - P(t)/taop, # number of cells of CD19- haematopoietic stem cells (HSCs)
     I'(t) = rhoi*(2*ai* (1/(1 + ks*(P(t)+I(t)))) -1 )*I(t) - I(t)/taoi + P(t)/taop - alpha*beta*I(t)*C(t), # number of cells of CD19+ B cell progenitors
     y1(t) = C(t),
-    y2(t) = B(t),
-    y3(t) = P(t)
+    y2(t) = L(t),
+    y3(t) = P(t)+B(t)+I(t) #células B totales 
 )
 
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
