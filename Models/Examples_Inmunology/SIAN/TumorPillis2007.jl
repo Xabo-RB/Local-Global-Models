@@ -10,7 +10,9 @@ ode = @ODEmodel(
     C'(t) = alpha2 - beta*C(t) - KC*M(t)*C(t), #circulating lymphocytes
     I'(t) = pt*T(t)*L(t)/(gt + T(t)) +  w*L(t)*I(t) - muI*I(t) + VI(t), # IL-2
     M'(t) = - gamma*M(t) + VM(t), #chemotherapy drug
-    y1(t) = z(t)
+    y1(t) = L(t),
+    y2(t) = N(t),
+    y3(t) = M(t)
 )
 
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
