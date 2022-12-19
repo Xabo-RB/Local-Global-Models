@@ -40,8 +40,7 @@ ode = @ODEmodel(
     w'(t) = b4*x(t)*z(t)/(k4+x(t)) - mu4*w(t) + r4*x(t)*y(t)/(m4+v(t)), #concentration of tumor promoting cytokines, including TGF-beta and IL-6
     v'(t) = b5*x(t)*z(t)/(k5 + x(t))- mu5*v(t), #concentration of tumor suppressing cytokines, including INF-gamma and IL-2
     y1(t) = z(t),
-    y2(t) = y(t),
-    y3(t) = x(t)
+    y2(t) = y(t) + x(t)
 )
 
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
