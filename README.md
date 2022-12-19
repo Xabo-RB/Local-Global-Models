@@ -235,6 +235,8 @@ Taken from:
 
 - TumorGarcia2020: [*Cancer-induced immunosuppression can enable effectiveness of immunotherapy through bistability generation: A mathematical and computational examination.*](https://doi.org/10.1016/j.jtbi.2020.110185), 2020
 
+- LeukaemiaLeon2021: [*CAR T cell therapy in B-cell acute lymphoblastic leukaemia: Insights from mathematical models*](https://doi.org/10.1016/j.cnsns.2020.105570), 2021
+
 
 ### (9) COVID
 
