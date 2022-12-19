@@ -219,6 +219,8 @@ Taken from:
 
 - Phago cocktail: [*Optimizing the timing and composition of therapeutic phage cocktails: a control-theoretic approach*](https://doi.org/10.1007/s11538-020-00751-w), 2020
 
+- gLV_QSMI  [*Metabolite-mediated modelling of microbial community dynamics captures emergent behaviour more effectively than species–species modelling*](https://doi.org/10.1098/rsif.2019.0423), 2019
+
 ### (8) Inmunology
 
 - TCR triggering, Joao Sousa: [*A mathematical analysis of TCR serial triggering and down‐regulation*](https://doi.org/10.1002/1521-4141(200011)30:11<3219::AID-IMMU3219>3.0.CO;2-7), 2000
