@@ -1,7 +1,7 @@
 #Hu, X., Ke, G., & Jang, S. R. J. (2019). 
 #Modeling pancreatic cancer dynamics with immunotherapy. Bulletin of mathematical biology, 81(6), 1885-1915.
 
-
+#NO FUNCIONA
 using SIAN, Logging
 
 ode = @ODEmodel(
