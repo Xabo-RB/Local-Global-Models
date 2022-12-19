@@ -223,6 +223,8 @@ Taken from:
 
 - TCR triggering, Joao Sousa: [*A mathematical analysis of TCR serial triggering and down‐regulation*](https://doi.org/10.1002/1521-4141(200011)30:11<3219::AID-IMMU3219>3.0.CO;2-7), 2000
 
+- TCR Bachmann: [*Formation of tcr dimers/trimers as a crucial step for t cell activation*](https://doi.org/10.1002/(SICI)1521-4141(199808)28:08<2571::AID-IMMU2571>3.0.CO;2-T), 1998
+
 
 ### (9) COVID
 
