@@ -1,6 +1,8 @@
 #de Pillis, L. G., Fister, K. R., Gu, W., Head, T., Maples, K., Neal, T., ... & Kozai, K. (2008). Optimal control of mixed immunotherapy and chemotherapy of tumors.
 # Journal of Biological systems, 16(01), 51-80.
 
+#D = d* ((L(t)/T(t))^(2/3)) / s + ((L(t)/T(t))^(2/3))
+
 #No funciona
 using SIAN, Logging
 
