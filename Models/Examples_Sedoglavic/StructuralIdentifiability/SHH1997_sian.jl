@@ -1,4 +1,4 @@
-using StructuralIdentifiability
+using SIAN, Logging
 
 ode = @ODEmodel(
     X'(t) = kcatX*X(t)*RVV/(kmX+X(t)),
@@ -13,5 +13,5 @@ ode = @ODEmodel(
     y1(t) = IIa(t) + 556*IIaa2M(t)/1000
 )
 
-@time println(assess_identifiability(ode))
+@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
