@@ -13,7 +13,8 @@ ode = @ODEmodel(
     C'(t) = alpha2 - beta*C(t) - KC*M(t)*C(t), #circulating lymphocytes
     I'(t) = pt*T(t)*L(t)/(gt + T(t)) +  w*L(t)*I(t) - muI*I(t) + u2(t), # IL-2, VI = u2 aplicación directa, terapia de IL2
     M'(t) = - gamma*M(t) + u1(t), #chemotherapy drug, terapia/aplicación de quimio, u1 = VM
-    y1(t) = L(t)+N(t)+C(t),
+    y1(t) = L(t),
+    y2(t) = N(t),
     y3(t) = M(t)
 )
 
