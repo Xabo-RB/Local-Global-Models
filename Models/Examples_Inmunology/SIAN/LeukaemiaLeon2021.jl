@@ -1,7 +1,7 @@
 #León-Triana, O., Sabir, S., Calvo, G. F., Belmonte-Beitia, J., Chulián, S., Martínez-Rubio, Á., ... & Pérez-García, V. M. (2021). CAR T cell therapy in B-cell acute lymphoblastic leukaemia: Insights from mathematical models. 
 #Communications in Nonlinear Science and Numerical Simulation, 94, 105570.
 
-
+#NO FUNCIONA
 using SIAN, Logging
 
 ode = @ODEmodel(
@@ -12,7 +12,8 @@ ode = @ODEmodel(
     I'(t) = rhoi*(2*ai* (1/(1 + ks*(P(t)+I(t)))) -1 )*I(t) - I(t)/taoi + P(t)/taop - alpha*beta*I(t)*C(t), # number of cells of CD19+ B cell progenitors
     y1(t) = C(t),
     y2(t) = L(t),
-    y3(t) = P(t)+B(t)+I(t) #células B totales 
+    y3(t) = P(t),
+    y4(t) =  B(t) + I(t) #células B totales 
 )
 
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
