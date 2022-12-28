@@ -1,5 +1,6 @@
 using SIAN, Logging
 
+#TODOS GLOBALES PERO NO TIENE PARÁMETROS
 ode = @ODEmodel(
     x1'(t) = x3(t) - x2(t)*u(t),
     x2'(t) = u(t) - x2(t),
