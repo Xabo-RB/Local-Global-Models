@@ -1,13 +1,14 @@
-#Panteleev, M. A., Balandina, A. N., Lipets, E. N., Ovanesov, M. V., & Ataullakhanov, F. I. (2010). Task-oriented modular decomposition of biological networks: trigger mechanism in blood coagulation.
-# Biophysical journal, 98(9), 1751-1761.
+#Qiao, Y. H., Xu, C. Q., Zeng, Y. J., Xu, X. H., Zhao, H., & Xu, H. (2004). The kinetic model and simulation of blood coagulation—the kinetic influence of activated protein C. 
+#Medical engineering & physics, 26(4), 341-347.
 
 using SIAN, Logging
 ode = @ODEmodel(
-    S'(t) = -beta* (U(t)+I(t)) *(S(t)/N),
-    E'(t) =  beta*(U(t)+I(t))*(S(t)/N) - E(t)/Z,
-    U'(t) = (1-alpha)*E(t)/Z - U(t)/D,
-    I'(t) = alpha*E(t)/Z - I(t)/D,
-    R'(t) = U(t)/D + I(t)/D,
+    IXa'(t) = k1*beta - h1*IXa(t),
+    VIIIa'(t) = k2*IIa(t) + k3*APC(t)*VIIIa(t)/(b1+VIIIa(t)) - h2*VIIIa(t),
+    Xa'(t) = k5*IXa(t)*VIIIa(t)/(b2+VIIIa(t)) - h3*Xa(t),
+    Va'(t) = k6*IIa(t) - k7*APC(t)*Va(t)/(b3+Va(t)) - h4*Va(t),
+    APC'(t) = k8*IIa(t) - h5*APC(t),
+    IIa'(t) = k9*Xa(t)*Va(t)/(b4+Va(t))-h6*IIa(t),
     y1(t) = I(t)
 )
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
