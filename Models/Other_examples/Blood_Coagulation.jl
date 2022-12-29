@@ -9,6 +9,8 @@ ode = @ODEmodel(
     Va'(t) = k6*IIa(t) - k7*APC(t)*Va(t)/(b3+Va(t)) - h4*Va(t),
     APC'(t) = k8*IIa(t) - h5*APC(t),
     IIa'(t) = k9*Xa(t)*Va(t)/(b4+Va(t))-h6*IIa(t),
-    y1(t) = I(t)
+    y1(t) = Xa(t),
+    y2(t) = IIa(t),
+    y3(t) = IXa(t)
 )
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
