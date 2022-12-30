@@ -1,6 +1,8 @@
 #Qiao, Y. H., Xu, C. Q., Zeng, Y. J., Xu, X. H., Zhao, H., & Xu, H. (2004). The kinetic model and simulation of blood coagulation—the kinetic influence of activated protein C. 
 #Medical engineering & physics, 26(4), 341-347.
 
+
+#NO FUNCIONA
 using SIAN, Logging
 ode = @ODEmodel(
     IXa'(t) = k1*beta - h1*IXa(t),
@@ -11,6 +13,7 @@ ode = @ODEmodel(
     IIa'(t) = k9*Xa(t)*Va(t)/(b4+Va(t))-h6*IIa(t),
     y1(t) = Xa(t),
     y2(t) = IIa(t),
-    y3(t) = IXa(t)
+    y3(t) = IXa(t),
+    y4(t) = APC(t)
 )
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
