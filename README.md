@@ -223,6 +223,8 @@ Taken from:
 
 - Compositional Lokta-Volterra: [*Compositional Lotka-Volterra describes microbial dynamics in the simplex*](https://doi.org/10.1371/journal.pcbi.1007917), 2020
 
+- Blood Coagulation: [*he kinetic model and simulation of blood coagulation—the kinetic influence of activated protein c*](https://doi.org/10.1016/j.medengphy.2004.01.003), 2004
+
 ### (8) Inmunology
 
 - TCR triggering, Joao Sousa: [*A mathematical analysis of TCR serial triggering and down‐regulation*](https://doi.org/10.1002/1521-4141(200011)30:11<3219::AID-IMMU3219>3.0.CO;2-7), 2000
