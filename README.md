@@ -3,7 +3,7 @@ Models for analysing the global/local properties
 
 ### Percentage of identifiable parameters:
 
-![imaxe 3](https://github.com/Xabo-RB/Local-Global-Models/blob/main/imaxe 3.png)
+![imaxe3](https://github.com/Xabo-RB/Local-Global-Models/blob/main/imaxe3.png)
 
 ## List of Models
 
