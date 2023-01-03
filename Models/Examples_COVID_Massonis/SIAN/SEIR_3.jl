@@ -42,7 +42,7 @@ ode = @ODEmodel(
 using SIAN, Logging
 ode = @ODEmodel(
     S'(t) = beta*I(t)*S(t)/N-alpha*S(t),
-    E'(t) = beta*I(t)*S(t)/N-gamma*E(t),
+    E'(t) =  beta*I(t)*S(t)/N-gamma*E(t),
     I'(t) = gamma*E(t)-delta*I(t),
     R'(t) = delta*I(t)-alpha*Q(t)-k*Q(t),
     Q'(t) = alpha*Q(t),
@@ -50,11 +50,12 @@ ode = @ODEmodel(
     P'(t) = alpha*S(t),
     y1(t) = Q(t),
     y2(t) = D(t),
-    y3(t) = R(t),
+    y3(t) = R(t)
 )
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
-#
+
+#SLI todos, no son locales por el signo, lo son por la simetría
 using SIAN, Logging
 ode = @ODEmodel(
     N'(t) = 0,
