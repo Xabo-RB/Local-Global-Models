@@ -23,8 +23,8 @@ ode = @ODEmodel(
 #PRUEBAS PARA ANÁLISIS
 using SIAN, Logging
 ode = @ODEmodel(
-    S'(t) = beta*I(t)*S(t)-alpha*S(t),
-    E'(t) =  beta*I(t)*S(t)-gamma*E(t),
+    S'(t) = beta*I(t)*S(t)/N-alpha*S(t),
+    E'(t) =  beta*I(t)*S(t)/N-gamma*E(t),
     I'(t) = gamma*E(t)-delta*I(t),
     R'(t) = delta*I(t)-alpha*Q(t)-k*Q(t),
     Q'(t) = alpha*Q(t),
