@@ -42,14 +42,14 @@ ode = @ODEmodel(
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
 
-#Se pierde el SLI
+#No cambia nada
 using SIAN, Logging
 ode = @ODEmodel(
     S'(t) = -beta*S(t)*I(t),
     E'(t) = beta*S(t)*I(t)-epsilon*E(t),
     I'(t) = epsilon*E(t)-gamma*I(t)-d*I(t)-q*I(t),
     Q'(t) = q*I(t)-qt*Q(t)-d*Q(t),
-    R'(t) = I(t)+qt*Q(t),
+    R'(t) = I(t)+qt*Q(t), #ELIMINO GAMMA
     D'(t) = d*I(t)+d*Q(t),
     y1(t) = D(t)
 )
