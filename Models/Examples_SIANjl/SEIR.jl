@@ -45,7 +45,7 @@ ode = @ODEmodel(
   println(res)
 
 
-#SIN N(T) DE NINGUNA FORMA  
+#SIN N(T) DE NINGUNA FORMA, no cambia nada
 using SIAN, Logging
 
 ode = @ODEmodel(
@@ -58,3 +58,41 @@ ode = @ODEmodel(
 res = identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 0, nthrds = 1)
 
 println(res)
+
+#nu a NI y a a SGI
+using SIAN, Logging
+ode = @ODEmodel(
+  S'(t) = -b * S(t) * In(t) / N(t),
+  E'(t) = b * S(t) * In(t) / N(t) - E(t), #elimino nu de aquí
+  In'(t) = nu * E(t) - a * In(t),
+  N'(t) = 0,
+  y1(t) = In(t),
+  y2(t) = N(t)
+)
+@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
+
+
+#S(t) a SGI, resto igual
+using SIAN, Logging
+ode = @ODEmodel(
+  S'(t) = -b * S(t) * In(t) / N(t),
+  E'(t) = b * S(t) * In(t) / N(t) - nu * E(t),
+  In'(t) = E(t) - a * In(t),
+  N'(t) = 0,
+  y1(t) = In(t),
+  y2(t) = N(t)
+)
+@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
+
+
+#
+using SIAN, Logging
+ode = @ODEmodel(
+  S'(t) = -b * S(t) * In(t) / N(t),
+  E'(t) = b * S(t) * In(t) / N(t) - nu * E(t),
+  In'(t) = nu*E(t) - In(t),
+  N'(t) = 0,
+  y1(t) = In(t),
+  y2(t) = N(t)
+)
+@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
