@@ -43,7 +43,7 @@ ode = @ODEmodel(
 )
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
-#
+#todo SGI
 using SIAN, Logging
 ode = @ODEmodel(
   xA'(t) = -k1 * xA(t),
@@ -60,12 +60,12 @@ ode = @ODEmodel(
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
 
-#
+#todo SGI
 using SIAN, Logging
 ode = @ODEmodel(
   xA'(t) = -k1 * xA(t),
   xB'(t) = k1 * xA(t) - k2*xB(t), #elimino k2
-  xC'(t) = xB(t), #elimino k2
+  xC'(t) = xB(t), 
   eA'(t) = 0,
   eC'(t) = 0,
   y1(t) = xC(t),
@@ -76,7 +76,7 @@ ode = @ODEmodel(
 
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
-#
+#todo SGI
 using SIAN, Logging
 ode = @ODEmodel(
   xA'(t) = -xA(t), #elimino k1
