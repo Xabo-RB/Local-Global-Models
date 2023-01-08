@@ -10,10 +10,6 @@ ode = @ODEmodel(
   y2(t) = u0(t)
 )
 
-res = identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 0, nthrds = 1)
-
-println(res)
-
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
 #MODELO NO IDENTIFICABLE, CON P2 y P5
