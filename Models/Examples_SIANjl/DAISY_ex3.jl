@@ -16,7 +16,7 @@ ode = @ODEmodel(
 using SIAN, Logging
 
 ode = @ODEmodel(
-  x1'(t) = -1 * p1 * x1(t) + p2*x2(t) + u0(t),
+  x1'(t) = -p1 * x1(t) + p2*x2(t) + u0(t),
   x2'(t) = p3 * x1(t) - p4 * x2(t) + p5*x3(t),
   x3'(t) = p6 * x1(t) - p7 * x3(t),
   u0'(t) = 1,
@@ -24,9 +24,7 @@ ode = @ODEmodel(
   y2(t) = u0(t)
 )
 
-res = identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 0, nthrds = 1)
-
-println(res)
+@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
 
 #MODELO CON P2 Y DEFINIENDO U COMO UNA ENTRADA
