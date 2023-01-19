@@ -1,4 +1,3 @@
-st := time()
 read "C:/Users/Even/OneDrive - Universidade de Vigo/Escritorio/Softwares Benchmarking/SIAN-master/IdentifiabilityODE.mpl";
 
 
@@ -11,5 +10,4 @@ sigma := [
   y1(t) = Q(t)
 ];
 
-IdentifiabilityODE(sigma, GetParameters(sigma), infolevel = 2);
-time() - st;
+CodeTools[CPUTime](IdentifiabilityODE(sigma, GetParameters(sigma), infolevel = 2));
