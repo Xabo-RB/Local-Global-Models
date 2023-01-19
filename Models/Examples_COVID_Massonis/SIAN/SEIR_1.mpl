@@ -2,12 +2,12 @@ read "C:/Users/Even/OneDrive - Universidade de Vigo/Escritorio/Softwares Benchma
 
 
 sigma := [
-  diff(S(t), t) = -beta*S(t)*I(t),
-  diff(E(t), t) =  beta*S(t)*I(t)-v*E(t),
-  diff(I(t), t) = v*E(t)-psi*I(t)-(1-psi)*gamma*I(t),
-  diff(R(t), t) = gamma*Q(t)+(1-psi)*gamma*I(t),
-  diff(Q(t), t) = -gamma*Q(t)+psi*I(t),
+  diff(S(t), t) = -betta*S(t)*II(t),
+  diff(E(t), t) =  betta*S(t)*II(t)-v*E(t),
+  diff(II(t), t) = v*E(t)-pssi*II(t)-(1-pssi)*gammma*II(t),
+  diff(R(t), t) = gammma*Q(t)+(1-pssi)*gammma*II(t),
+  diff(Q(t), t) = -gammma*Q(t)+pssi*II(t),
   y1(t) = Q(t)
 ];
 
-CodeTools[CPUTime](IdentifiabilityODE(sigma, GetParameters(sigma), infolevel = 2));
+IdentifiabilityODE(sigma, GetParameters(sigma), infolevel = 2):
