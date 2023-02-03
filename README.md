@@ -28,8 +28,6 @@ Taken from: [*Benchmarking tools for a priori identifiability analysis*](https:/
 
 - JAKSTAT1
 
-- JAKSTAT2
-
 - MAPK
 
 - NFKB1
