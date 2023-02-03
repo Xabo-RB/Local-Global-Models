@@ -65,10 +65,6 @@ Taken from: https://github.com/genssi-developer/GenSSI.git
 
 - Glycolysis
 
-- Goodwin_gen
-
-- GoodwinPoly_gen
-
 - HighDimNonLin
 
 - PharmacokineticsPoly
@@ -99,10 +95,6 @@ Taken from: https://github.com/sedoglavic/ObservabilityTest.git
 
 - CGV1990
 
-- F2007
-
-- G1995
-
 - GRV1990
 
 - Juricic_1
@@ -113,21 +105,13 @@ Taken from: https://github.com/sedoglavic/ObservabilityTest.git
 
 - LLW1987
 
-- MP1999
-
 - MW2000
 
 - R1986
 
-- REtAl2002
-
-- SHH1997
-
 - V1987
 
 - Verhulst
-
-- W1982
 
 - WSP1985
 
@@ -141,8 +125,6 @@ Taken from: https://github.com/alexeyovchinnikov/SIAN-Julia.git
 - DAISY_ex3
 
 - DAISY_mamil3
-
-- DAISY_mamil4
 
 - oralGlucose
 
