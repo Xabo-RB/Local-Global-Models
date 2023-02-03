@@ -238,8 +238,6 @@ Taken from [*Structural identifiability and observability of compartmental model
 
 - SEIR 11 (https://github.com/ryansmcgee/seirsplus#model)
 
-- SEIR 14 [*A modified SEIR model to predict the COVID-19 outbreak in Spain and Italy: Simulating control scenarios and multi-scale epidemics*](https://doi.org/10.1016/j.rinp.2020.103746), 2020
-
 - SEIR 16 [*Why is it difficult to accurately predict the COVID-19 epidemic?*](https://doi.org/10.1016/j.idm.2020.03.001), 2020
 
 - SEIR 17 [*Healthcare impact of COVID-19 epidemic in India: A stochastic mathematical model*](https://doi.org/10.1016/j.mjafi.2020.03.022), 2020
@@ -259,8 +257,6 @@ Taken from [*Structural identifiability and observability of compartmental model
 - SEIR 38 [*SEIR Transmission dynamics model of 2019 nCoV coronavirus with considering the weak infectious ability and changes in latency duration*](https://doi.org/10.1101/2020.02.16.20023655), 2020
 
 - SIR 6 [*Total variation regularization for compartmental epidemic models with time-varying dynamics*](https://doi.org/10.48550/arXiv.2004.00412), 2020
-
-- SIR 13 [*Effective containment explains sub-exponential growth in confirmed cases of recent COVID-19 outbreak in China*](https://www.science.org/doi/10.1126/science.abb4557), 2020
 
 - SIR 19 [*A simple SIR model with a large set of asymptomatic infectives*](https://doi.org/10.3934/mine.2021013), 2020
 
