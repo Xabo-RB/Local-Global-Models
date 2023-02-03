@@ -143,7 +143,7 @@ Taken from: https://github.com/afvillaverde/strike-goldd.git
 
 - 1A_integral
 
-- 1B_integral
+- 1B_prop_integral
 
 - 1C_nonlinear
 
