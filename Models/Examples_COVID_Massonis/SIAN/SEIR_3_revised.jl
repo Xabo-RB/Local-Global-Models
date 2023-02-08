@@ -1,6 +1,7 @@
 # Liangrong Peng et al. (2020) Epidemic analysis of COVID-19 in 
 # China by dynamical modeling 
 
+#MISMOS RESULTADOS
 using SIAN, Logging
 ode = @ODEmodel(
     N'(t) = 0,
