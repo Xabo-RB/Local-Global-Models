@@ -5,8 +5,8 @@
 using SIAN, Logging
 ode = @ODEmodel(
     N'(t) = 0,
-    S'(t) = beta*I(t)*S(t)/N(t)-alpha*S(t),
-    E'(t) =  beta*I(t)*S(t)/N(t)-gamma*E(t),
+    S'(t) = -beta*I(t)*S(t)/N(t)-alpha*S(t),
+    E'(t) = beta*I(t)*S(t)/N(t)-gamma*E(t),
     I'(t) = gamma*E(t)-delta*I(t),
     R'(t) = delta*I(t)-lambda*Q(t)-k*Q(t),
     Q'(t) = lambda*Q(t),
@@ -23,8 +23,8 @@ ode = @ODEmodel(
 using SIAN, Logging
 ode = @ODEmodel(
     N'(t) = 0,
-    S'(t) = beta*I(t)*S(t)/N(t)-alpha*S(t),
-    E'(t) =  beta*I(t)*S(t)/N(t)-gamma*E(t),
+    S'(t) = -beta*I(t)*S(t)/N(t)-alpha*S(t),
+    E'(t) = beta*I(t)*S(t)/N(t)-gamma*E(t),
     I'(t) = gamma*E(t)-delta*I(t),
     R'(t) = delta*I(t)-u1(t)*Q(t)-u2(t)*Q(t),
     Q'(t) = u1(t)*Q(t),
