@@ -5,7 +5,7 @@
 using SIAN, Logging
 ode = @ODEmodel(
     N'(t) = 0,
-    S'(t) = beta*I(t)*S(t)/N(t)-alpha*S(t),
+    S'(t) = -beta*I(t)*S(t)/N(t)-alpha*S(t),
     E'(t) =  beta*I(t)*S(t)/N(t)-gamma*E(t),
     I'(t) = gamma*E(t)-delta*I(t),
     R'(t) = delta*I(t)-alpha*Q(t)-k*Q(t),
@@ -24,7 +24,7 @@ ode = @ODEmodel(
 #Mismos resultados sin N
 using SIAN, Logging
 ode = @ODEmodel(
-    S'(t) = beta*I(t)*S(t)-alpha*S(t),
+    S'(t) = -beta*I(t)*S(t)-alpha*S(t),
     E'(t) =  beta*I(t)*S(t)-gamma*E(t),
     I'(t) = gamma*E(t)-delta*I(t),
     R'(t) = delta*I(t)-alpha*Q(t)-k*Q(t),
@@ -41,7 +41,7 @@ ode = @ODEmodel(
 #No funciona
 using SIAN, Logging
 ode = @ODEmodel(
-    S'(t) = beta*I(t)*S(t)/N-alpha*S(t),
+    S'(t) = -beta*I(t)*S(t)/N-alpha*S(t),
     E'(t) =  beta*I(t)*S(t)/N-gamma*E(t),
     I'(t) = gamma*E(t)-delta*I(t),
     R'(t) = delta*I(t)-alpha*Q(t)-k*Q(t),
@@ -59,7 +59,7 @@ ode = @ODEmodel(
 using SIAN, Logging
 ode = @ODEmodel(
     N'(t) = 0,
-    S'(t) = beta*I(t)*S(t)/N(t)-alpha*S(t),
+    S'(t) = -beta*I(t)*S(t)/N(t)-alpha*S(t),
     E'(t) =  beta*I(t)*S(t)/N(t) + gamma*E(t), #signo cambiado
     I'(t) = gamma*E(t) + delta*I(t), #signo cambiado
     R'(t) = delta*I(t)-alpha*Q(t)-k*Q(t),
@@ -77,7 +77,7 @@ ode = @ODEmodel(
 using SIAN, Logging
 ode = @ODEmodel(
     N'(t) = 0,
-    S'(t) = beta*I(t)*S(t)/N(t)-alpha*S(t),
+    S'(t) = -beta*I(t)*S(t)/N(t)-alpha*S(t),
     E'(t) = beta*I(t)*S(t)/N(t)-gamma + E(t), #deshice la simetría al separar las variables
     I'(t) = gamma + E(t)-delta*I(t),
     R'(t) = delta*I(t)-alpha*Q(t)-k*Q(t),
@@ -96,7 +96,7 @@ ode = @ODEmodel(
 using SIAN, Logging
 ode = @ODEmodel(
     N'(t) = 0,
-    S'(t) = beta*I(t)*S(t)/N(t)-alpha*S(t),
+    S'(t) = -beta*I(t)*S(t)/N(t)-alpha*S(t),
     E'(t) = beta*I(t)*S(t)/N(t)-gamma*E(t), 
     I'(t) = gamma*E(t)-delta+I(t),#deshice la simetría al separar las variables
     R'(t) = delta+I(t)-alpha*Q(t)-k*Q(t),
@@ -114,7 +114,7 @@ ode = @ODEmodel(
 using SIAN, Logging
 ode = @ODEmodel(
     N'(t) = 0,
-    S'(t) = beta*I(t)*S(t)/N(t)-alpha*S(t),
+    S'(t) = -beta*I(t)*S(t)/N(t)-alpha*S(t),
     E'(t) = beta*I(t)*S(t)/N(t)-gamma*E(t), 
     I'(t) = gamma*E(t),#-delta*I(t), ELIMINÉ ESTO
     R'(t) = delta*I(t)-alpha*Q(t)-k*Q(t),
@@ -132,7 +132,7 @@ ode = @ODEmodel(
 using SIAN, Logging
 ode = @ODEmodel(
     N'(t) = 0,
-    S'(t) = beta*I(t)*S(t)/N(t)-alpha*S(t),
+    S'(t) = -beta*I(t)*S(t)/N(t)-alpha*S(t),
     E'(t) = beta*I(t)*S(t)/N(t),#-gamma*E(t), 
     I'(t) = gamma*E(t)-delta*I(t),
     R'(t) = delta*I(t)-alpha*Q(t)-k*Q(t),
@@ -150,7 +150,7 @@ ode = @ODEmodel(
 using SIAN, Logging
 ode = @ODEmodel(
     N'(t) = 0,
-    S'(t) = I(t)*S(t)/N(t)-alpha*S(t),
+    S'(t) = -beta*I(t)*S(t)/N(t)-alpha*S(t),
     E'(t) =  beta*I(t)*S(t)/N(t)-gamma*E(t),
     I'(t) = gamma*E(t)-delta*I(t),
     R'(t) = delta*I(t)-alpha*Q(t)-k*Q(t),
