@@ -1,3 +1,6 @@
+#Bellu, G., Saccomani, M. P., Audoly, S., & D’Angiò, L. (2007). DAISY: A new software tool to test global identifiability of biological and physiological systems. 
+#Computer methods and programs in biomedicine, 88(1), 52-61.
+
 using SIAN, Logging
 
 ode = @ODEmodel(
