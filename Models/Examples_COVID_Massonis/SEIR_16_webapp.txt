@@ -1,0 +1,5 @@
+dS/dt = -beta*I*S,
+dE/dt = beta*I*S-epsilon*E,
+dI/dt = epsilon*E-(rho+mu)*I,
+dR/dt = rho*I-d*R,
+y = mu*I
