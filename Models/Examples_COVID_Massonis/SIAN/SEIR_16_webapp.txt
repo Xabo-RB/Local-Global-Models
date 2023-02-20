@@ -2,4 +2,4 @@ diff(x1(t),t) = -beta*x3(t)*x1(t),
 diff(x2(t),t) = beta*x3(t)*x1(t)-epsilon*x2(t),
 diff(x3(t),t) = epsilon*x2(t)-(rho+mu)*x3(t),
 diff(x4(t),t) = rho*x3(t)-d*x4(t),
-y = mu*x3
+y(t) = mu*x3(t)
