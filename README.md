@@ -8,7 +8,8 @@ Models for analysing the global/local properties
 ## List of Models
 
 ### (1)
-Taken from: [*Benchmarking tools for a priori identifiability analysis*](https://arxiv.org/abs/2207.09745), 2022. https://doi.org/10.48550/arXiv.2207.09745
+Taken from: [*Benchmarking tools for a priori identifiability analysis*](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btad065/7017524?utm_source=advanceaccess&utm_campaign=bioinformatics&utm_medium=email). Bioinformatics, btad065, https://doi.org/10.1093/bioinformatics/btad065
+
 
 - BIG
 
