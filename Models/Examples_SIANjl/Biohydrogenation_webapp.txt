@@ -1,0 +1,6 @@
+dx4/dt =  -k5*x4/(k6 + x4),
+dx5/dt = k5*x4/(k6 + x4) - k7*x5/(k8+x5+x6),
+dx6/dt = k7*x5/(k8+x5+x6) - k9*x6*(k10-x6)/k10,
+dx7/dt = k9*x6*(k10 - x6)/k10,
+y1 = x4,
+y2 = x5
