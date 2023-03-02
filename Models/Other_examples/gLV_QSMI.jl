@@ -5,7 +5,7 @@
 using SIAN, Logging
 ode = @ODEmodel(
     x1'(t) = k11*x1(t)*w1(t) - d1*x1(t) + phi12*x1(t)*w2(t),
-    x2'(t) = k21*x2(t)*w1(t) - d2*x(t),
+    x2'(t) = k21*x2(t)*w1(t) - d2*x2(t),
     w1'(t) = f1 - dd1*w1(t) - k11*x1(t)*w1(t) - k21*x2(t)*w1(t),
     w2'(t) = k21*x2(t)*w1(t) - dd2*w2(t) - k12*x1(t)*w2(t),
     #yy1'(t) = k11*x1(t)*y1(t) - ddd1*yy1(t) - kk21*x2(t)*yy1(t),
