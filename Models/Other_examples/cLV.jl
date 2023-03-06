@@ -16,7 +16,7 @@ ode = @ODEmodel(
 
 
 #Model without external inputs
-
+#2
 using SIAN, Logging
 ode = @ODEmodel(
     pi1'(t) = pi1(t)*( (g1+A11*pi1(t)+A12*pi2(t)+A13*pi3(t)) - pi1(t)*(g1+A11*pi1(t)+A12*pi2(t)+A13*pi3(t)) + pi2(t)*(g2+A21*pi1(t)+A22*pi2(t)+A23*pi3(t))),
@@ -31,7 +31,7 @@ ode = @ODEmodel(
 
 
 #Model without external inputs 1 less output
-
+#3
 using SIAN, Logging
 ode = @ODEmodel(
     pi1'(t) = pi1(t)*( (g1+A11*pi1(t)+A12*pi2(t)+A13*pi3(t)) - pi1(t)*(g1+A11*pi1(t)+A12*pi2(t)+A13*pi3(t)) + pi2(t)*(g2+A21*pi1(t)+A22*pi2(t)+A23*pi3(t))),
@@ -45,7 +45,7 @@ ode = @ODEmodel(
 
 
 # 1 less output
-
+#4
 using SIAN, Logging
 ode = @ODEmodel(
     pi1'(t) = pi1(t)*( (g1+A11*pi1(t)+A12*pi2(t)+A13*pi3(t)+B11*u1(t)) - pi1(t)*(g1+A11*pi1(t)+A12*pi2(t)+A13*pi3(t)+B11*u1(t)) + pi2(t)*(g2+A21*pi1(t)+A22*pi2(t)+A23*pi3(t)+B21*u1(t))),
