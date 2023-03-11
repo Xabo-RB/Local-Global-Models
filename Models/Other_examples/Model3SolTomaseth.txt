@@ -1,0 +1,5 @@
+diff(x1(t),t) = -(k01 + k21 + k31)*x1(t) + k12*x2(t) + u(t),
+diff(x2(t),t) = k21*x1(t) - (k12 + k32)*x2(t) + k23*x3(t),
+diff(x3(t),t) = k31*x1(t) + k32*x2(t) - (k23+k03)*x3(t),
+y1(t) = x2(t),
+y2(t) = x3(t)
