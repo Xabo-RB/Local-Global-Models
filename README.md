@@ -119,7 +119,7 @@ Taken from: https://github.com/sedoglavic/ObservabilityTest.git
 ### (4)
 Taken from: https://github.com/alexeyovchinnikov/SIAN-Julia.git
 
-- Giohydragenation
+- Biohydragenation
 
 - ChemicalReactionNetwork
 
