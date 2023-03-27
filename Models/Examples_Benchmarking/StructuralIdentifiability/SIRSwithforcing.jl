@@ -19,6 +19,6 @@ ode = @ODEmodel(
   y2(t) = r(t)
 )
 
-@time println(assess_identifiability(ode))
+#@time println(assess_identifiability(ode))
 
 println(find_ioequations(ode))
