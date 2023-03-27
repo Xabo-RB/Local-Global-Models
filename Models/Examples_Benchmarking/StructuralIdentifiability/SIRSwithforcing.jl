@@ -20,3 +20,5 @@ ode = @ODEmodel(
 )
 
 @time println(assess_identifiability(ode))
+
+println(find_ioequations(ode))
