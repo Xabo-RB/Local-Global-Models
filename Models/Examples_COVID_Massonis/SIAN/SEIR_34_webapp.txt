@@ -7,3 +7,9 @@ diff(x6(t),t) = 0,
 y1(t) = K*x3(t),
 y2(t) = x5(t),
 y3(t) = x6(t)
+
+diff(x1(t),t) = 2-r*beta*x1(t)*I(t)/1000-mu*x1(t),
+diff(x2(t),t) = r*beta*x1(t)*x3(t)/1000-epsilon*x2(t)-mu*x2(t),
+diff(x3(t),t) = epsilon*x2(t)-gammma*x3(t)-mu*x3(t),
+diff(x4(t),t) = gammma*x3(t)-mu*x4(t),
+y1(t) = K*x3(t)
