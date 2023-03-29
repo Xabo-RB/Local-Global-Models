@@ -5,6 +5,7 @@ ode = @ODEmodel(
     E'(t) =  beta*I(t)*(S(t)/N(t)) - alpha*E(t),
     I'(t) = alpha*E(t) - lambda*I(t),
     R'(t) = lambda*I(t),
+    N'(t) = 0,
     y1(t) = I(t),
     y2(t) = N(t)
 )
