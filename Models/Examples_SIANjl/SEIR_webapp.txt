@@ -1,0 +1,6 @@
+diff(x1(t),t) = -b * x1(t) * x3(t) / x4(t),
+diff(x2(t),t) = b * x1(t) * x3(t) / x4(t) - nu * x2(t),
+diff(x3(t),t) = nu * x2(t) - a * x3(t),
+diff(x4(t),t) =  0,
+y1(t) = x3(t),
+y2(t) = x4(t)
