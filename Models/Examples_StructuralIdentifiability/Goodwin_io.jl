@@ -1,5 +1,3 @@
-using Logging
-
 using StructuralIdentifiability
 
 logger = Logging.SimpleLogger(stdout, Logging.Info)
