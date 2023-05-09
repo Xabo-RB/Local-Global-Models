@@ -45,8 +45,6 @@ Taken from: [*Benchmarking tools for a priori identifiability analysis*](https:/
 
 - Ruminal Lipolysis
 
-- SIRS with forcing
-
 - Tumor
 
 ### (2)
