@@ -227,23 +227,13 @@ Taken from [*Structural identifiability and observability of compartmental model
 
 - SEIR 2 [*Assessing parameter identifiability in compartmental dynamic models using a computational approach: application to infectious disease transmission models*](https://doi.org/10.1186/s12976-018-0097-6), 2019
 
-- SEIR 3 [*Epidemic analysis of COVID-19 in China by dynamical modeling*](https://doi.org/10.1101/2020.02.16.20023465), 2020
-
 - SEIR 4 [*Mathematical Modeling of Epidemic Diseases; A Case Study of the COVID-19 Coronavirus*](https://doi.org/10.48550/arXiv.2003.11371), 2020
 
 - SEIR 5 [*Mathematical Modeling of Epidemic Diseases; A Case Study of the COVID-19 Coronavirus*](https://doi.org/10.48550/arXiv.2003.11371), 2020
 
-- SEIR 8 [*To mask or not to mask: Modeling the potential for face mask use by the general public to curtail the COVID-19 pandemic*](https://doi.org/10.1016/j.idm.2020.04.001), 2020
-
 - SEIR 11 (https://github.com/ryansmcgee/seirsplus#model)
 
 - SEIR 16 [*Why is it difficult to accurately predict the COVID-19 epidemic?*](https://doi.org/10.1016/j.idm.2020.03.001), 2020
-
-- SEIR 17 [*Healthcare impact of COVID-19 epidemic in India: A stochastic mathematical model*](https://doi.org/10.1016/j.mjafi.2020.03.022), 2020
-
-- SEIR 18 [*Modeling the Control of COVID-19: Impact of Policy Interventions and Meteorological Factors*](https://doi.org/10.48550/arXiv.2003.02985), 2020
-
-- SEIR 31 [*Mathematical model of transmission dynamics with mitigation and health measures for SARS-CoV-2 infection in European countries*](https://doi.org/10.21203/rs.3.rs-32248/v1), 2020
 
 - SEIR 32 [*Modelling the Transmission Dynamics of COVID-19 in Six High-Burden Countries*](https://doi.org/10.1155/2021/5089184), 2021
 
@@ -252,8 +242,6 @@ Taken from [*Structural identifiability and observability of compartmental model
 - SEIR 34 [*Introduction to SEIR Models*](https://indico.ictp.it/event/7960/session/3/contribution/19/material/slides/0.pdf), 2017
 
 - SEIR 36 ref (https://github.com/ryansmcgee/seirsplus/blob/master/docs/SEIRSplus_Model.pdf)
-
-- SEIR 38 [*SEIR Transmission dynamics model of 2019 nCoV coronavirus with considering the weak infectious ability and changes in latency duration*](https://doi.org/10.1101/2020.02.16.20023655), 2020
 
 - SIR 6 [*Total variation regularization for compartmental epidemic models with time-varying dynamics*](https://doi.org/10.48550/arXiv.2004.00412), 2020
 
