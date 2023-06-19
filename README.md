@@ -78,7 +78,7 @@ Taken from: https://github.com/genssi-developer/GenSSI.git
 
 
 ### (3)
-Taken from: https://github.com/sedoglavic/ObservabilityTest.git
+%Taken from: https://github.com/sedoglavic/ObservabilityTest.git
 
 - A2006
 
