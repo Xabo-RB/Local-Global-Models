@@ -7,7 +7,7 @@ Models for analysing the global/local properties
 
 ## List of Models
 
-![page5](https://github.com/Xabo-RB/Local-Global-Models/blob/main/page5.jpg)
+![page5](https://github.com/Xabo-RB/Local-Global-Models/blob/main/page5.png)
 
 ### (1)
 Taken from: [*Benchmarking tools for a priori identifiability analysis*](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btad065/7017524?utm_source=advanceaccess&utm_campaign=bioinformatics&utm_medium=email). 2023
