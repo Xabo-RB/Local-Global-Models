@@ -11,6 +11,8 @@ The models are classified according to the original publication:
 
 ![page5](https://github.com/Xabo-RB/Local-Global-Models/blob/main/page5.jpg)
 
+DOI: 10.1109/ACCESS.2023.0322000
+
 The models are classified according to the source from where they were taken:
 
 ### (1)
