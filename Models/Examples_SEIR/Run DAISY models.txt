@@ -1,7 +1,0 @@
-Reduce (Free CSL version, revision 4859), 19-Jan-19 ...
-
-1: LOAD DAISY$
-
-%%PONER LA RUTA DEL OTRO ORDENADOR
-2: IN "C:\Users\Even\Documents\GitHub\Local-Global-Models\Models\Examples_COVID_Massonis\SIAN\SEIR_1.txt"$
-
