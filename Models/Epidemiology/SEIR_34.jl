@@ -15,7 +15,7 @@ ode = @ODEmodel(
     y3(t) = N(t)
 )
 
-@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
+@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3))
 
 
 #PRUEBAS
