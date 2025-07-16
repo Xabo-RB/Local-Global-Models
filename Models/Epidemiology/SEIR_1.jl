@@ -8,7 +8,7 @@ ode = @ODEmodel(
     I'(t) = v*E(t)-psi*I(t)-(1-psi)*gamma*I(t),
     R'(t) = gamma*Q(t)+(1-psi)*gamma*I(t),
     Q'(t) = -gamma*Q(t)+psi*I(t),
-    y1(t) = Q(t)
+    y1(t) = Q(t) + R(t)
 )
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10))
 
