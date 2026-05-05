@@ -62,3 +62,15 @@ ode = @ODEmodel(
 )
 @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
 
+using StructuralIdentifiability
+
+ode = @ODEmodel(
+    S'(t) = -beta*S(t)*I(t),
+    E'(t) =  beta*S(t)*I(t)-v*E(t),
+    I'(t) = v*E(t)-psi*I(t)-(1-psi)*gamma*I(t),
+    R'(t) = gamma*Q(t)+(1-psi)*gamma*I(t),
+    Q'(t) = -gamma*Q(t)+psi*I(t),
+    y1(t) = R(t)+Q(t)
+)
+
+@time println(assess_identifiability(ode))

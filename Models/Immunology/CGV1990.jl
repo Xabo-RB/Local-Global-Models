@@ -1,3 +1,7 @@
+# M. J. Chappell, K. R. Godfrey, and S. Vajda, ‘‘Global identifiability of the
+# parameters of nonlinear systems with specified inputs: A comparison of
+# methods,’’ Math. Biosci., vol. 102, no. 1, pp. 41–73, Nov. 1990
+
 using StructuralIdentifiability
 
 ode = @ODEmodel(
