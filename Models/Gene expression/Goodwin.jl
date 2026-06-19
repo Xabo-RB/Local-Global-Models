@@ -30,4 +30,16 @@ ode = @ODEmodel(
     y(t) = x1(t)
 )
 
-@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3))
+@time println(identifiability_ode(ode, get_parameters(ode); p=0.99, p_mod=2^29 - 3))
+
+
+using SIAN, Logging
+
+ode = @ODEmodel(
+    X'(t) = - X(t) + 1 / (1 + Z(t)*Z(t)*Z(t)*Z(t)),
+    Y'(t) = X(t) - k2 * Y(t),
+    Z'(t) = k1 * Y(t) - k3 * Z(t),
+    y(t) = X(t)
+)
+
+@time println(identifiability_ode(ode, get_parameters(ode); p=0.99, p_mod=2^29 - 3))
