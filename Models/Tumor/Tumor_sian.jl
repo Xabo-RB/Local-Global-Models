@@ -6,7 +6,7 @@ using Logging, SIAN
 
 
 ode = @ODEmodel(
-    x1'(t) = -(k3+k7)*x1(t) +k4*x2(t),
+    x1'(t) = -(k3+k7)*x1(t) + k4*x2(t),
     x2'(t) = k3*x1(t)-(k4+a*k5+b*d*k5)*x2(t)+k6*x3(t)+k6*x4(t)+k5*x2(t)*x3(t)+k5*x2(t)*x4(t),
     x3'(t) = a*k5*x2(t)-k6*x3(t)-k5*x2(t)*x4(t),
     x4'(t) = b*d*k5*x2(t)-k6*x4(t)-k5*x2(t)*x4(t),
@@ -14,10 +14,9 @@ ode = @ODEmodel(
     y1(t) = x5(t)
 )
 
-@time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 2^29 - 3, infolevel = 10, nthrds = 1))
+@time println(identifiability_ode(ode, get_parameters(ode); p=0.99, p_mod=2^29 - 3))
 
 # @time println(identifiability_ode(ode, get_parameters(ode); p = 0.99, p_mod = 0, infolevel = 10, nthrds = 1))
-
 
 
 
